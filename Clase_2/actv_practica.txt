@@ -1,0 +1,53 @@
+Listas y Tuplas
+
+1. Identifica el tipo de dato (int, float, string, list o touple) de los siguientes valores literales.
+
+     Dato          |     Tipo
+______________________________________
+"Hola mundo"       |    string
+[1, 10, 100]       |    list
+-25                |    int
+(8, 100, -12)      |    tuple
+1.167              |    float
+["Hola", "Mundo"]  |    list
+' '                |    string
+(1, -5, "Hola!")   |    tuple
+
+
+1. Determina mentalmente (sin programar) el resultado que aparecerá por pantalla a partir de las siguientes variables:
+
+a = 10
+
+b = -5
+
+c = "Hola"
+
+d = [1, 2, 3]
+
+e= (4,5,6)
+
+     Ejecutar       |     Resultado
+______________________________________
+print(a * 5)        |        50
+print(a - b)        |        5
+print(c + "Mundo")  |    "HolaMundo"
+print(c * 2)        |    "HolaHola"
+print(c[-1])        |       "a"
+print(c[1:])        |      "ola"
+print(d + d)        |    [1,2,3,1,2,3]
+print(e[1])         |        5
+print(e+(7,8,9))    |    (4,5,6,7,8,9)
+
+1. El siguiente código pretende realizar una media entre 3 números, pero no funciona correctamente. ¿Eres capaz de identificar el problema y solucionarlo?
+ 
+numero_1 = 9 
+numero_2 = 3 
+numero_3 = 6
+​media = numero_1 + numero_2 + numero_3 / 3 
+print("La nota media es", media) La nota media es 14.0
+
+****** CORRECCION *******
+​media = (numero_1 + numero_2 + numero_3) / 3
+-Lo que estaba pasando es que se realizaba: 
+ 
+ numero_1 + numero_2 + (numero_3/3) = 14
